@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+    xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
+<head>
+<title>BONC东方国信</title>
+</head>
+<body>
+    <div>
+    <form th:action="@{v1/updateName}" th:method="get">
+                  请输入要修改的名字：
+        <input type="text" name ="userName" />
+              请输入新名字：
+        <input type="text" name ="newName" />
+        <input type="submit" value="提交"/>
+    </form>
+    </div>
+    
+</body>
+</html>
